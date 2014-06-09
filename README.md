@@ -14,23 +14,25 @@ Tip Caculator
 
 Completed:
 
-    1. User is displayed the tip of specified percentage for specified entered amount
+    * [x] Required: User is displayed the tip of specified percentage for specified entered amount
 
-    2. User enters the total amount of the transaction
+    * [x] Required: User enters the total amount of the transaction
 
-    3. Upon selecting tip amount, formatted tip value is displayed
+    * [x] Required: User can select between tip amounts (i.e 10%, 15%, 20%)
 
-    4. (Optional) User changes the total amount and updated tip is reflected automatically
+    * [x] Required: Upon selecting tip amount, formatted tip value is displayed
 
-    5. (Optional) User can select custom tip percentage if desired
+    * [x] (Optional) User changes the total amount and updated tip is reflected automatically
 
-    6. (Optional) User can select how many ways to split the tip
+    * [x] (Optional) User can select custom tip percentage if desired
 
-    7. (Optional) User can edit preset tip percentages and have them persist across launches
+    * [x] (Optional) User can select how many ways to split the tip
 
-    8. (Optional) Experiment with trying input widgets to replace the buttons and/or textviews
+    * [x] (Optional) User can edit preset tip percentages and have them persist across launches
 
-    9. Add a new option: Tip Calculation based on Subtotal or Subtotal + Tax
+    * [x] (Optional) Experiment with trying input widgets to replace the buttons and/or textviews
+
+    * [x] Add a new option: Tip Calculation based on Subtotal or Subtotal + Tax
 
 
 3. Walkthrough of all user stories:
