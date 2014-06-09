@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E7DC"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tvSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/subtotal"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSubtotal"
+        android:layout_alignRight="@+id/tvSubtotal"
+        android:layout_below="@+id/tvSubtotal"
+        android:layout_marginTop="35dp"
+        android:gravity="left"
+        android:text="@string/tax"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etSubtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvTax"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/tvTip"
+        android:ems="10"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTax"
+        android:layout_alignLeft="@+id/edTip"
+        android:layout_alignRight="@+id/etSubtotal"
+        android:layout_toRightOf="@+id/tvSplit"
+        android:ems="10"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvTip"
+        android:layout_alignRight="@+id/etSubtotal"
+        android:layout_toRightOf="@+id/tvTip"
+        android:ems="10"
+        android:hint="0.0"
+        android:inputType="numberDecimal"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvResult"
+        android:layout_alignRight="@+id/spinner1"
+        android:layout_toRightOf="@+id/tvTip"
+        android:ems="10"
+        android:enabled="false"
+        android:textColor="#0A0A0A"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvSplit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/tvSplit"
+        android:layout_marginBottom="57dp"
+        android:text="@string/totalMount"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTax"
+        android:layout_below="@+id/tvTax"
+        android:layout_marginTop="36dp"
+        android:text="@string/tipRate"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTip"
+        android:layout_alignRight="@+id/tvTip"
+        android:layout_below="@+id/tvTip"
+        android:layout_marginTop="35dp"
+        android:text="@string/split"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvSplit"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/edTip"
+        android:layout_alignRight="@+id/edTip"
+        android:entries="@array/split_num"
+        android:prompt="@string/split_promote"
+        android:layout_below="@+id/edTip" />
+
+    <RadioGroup
+        android:id="@+id/rgPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edResult"
+        android:layout_below ="@+id/spSplit"
+        android:layout_alignLeft="@+id/tvSplit"
+        android:layout_alignRight="@+id/edResult"
+        android:layout_marginBottom="26dp" >
+
+        <RadioButton
+            android:id="@+id/rbPreTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/preTaxTip"
+            android:textSize="13sp" />
+
+        <RadioButton
+            android:id="@+id/rbAfterTax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:checked="true"
+            android:text="@string/afterTax"
+            android:textSize="13sp" />
+
+    </RadioGroup>
+
+</RelativeLayout>

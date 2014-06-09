@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TipCalculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="tax">Tax:</string>
+    <string name="tipRate">Tip Rate (%):</string>
+    <string name="split">Split:</string>
+    <string name="result">Result:</string>
+
+    <string name="split_promote">Choose the split number</string>
+
+    <string-array name="split_num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+        <string name="preTaxTip">Tip Cacluation Based on Subtotal</string>
+        <string name="afterTax">Tip Calculation Based on Subtotal and Tax</string>
+        <string name="totalMount">Total Amount/Persion</string>
+
+</resources>
